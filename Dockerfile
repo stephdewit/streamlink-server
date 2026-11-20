@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:3.15-alpine
 COPY --from=mwader/static-ffmpeg:9.0.2 /ffmpeg /usr/local/bin/ffmpeg
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt \
