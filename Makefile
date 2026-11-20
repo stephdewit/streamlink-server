@@ -1,5 +1,6 @@
 namespace = stephdewit
 image = streamlink-server
+VERSION ?= $(shell sed -n 's/^streamlink==//p' requirements.txt)
 
 .PHONY: build push check-version
 
